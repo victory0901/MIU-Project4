@@ -1,0 +1,60 @@
+/*
+
+MIU Project 3
+James Floyd II 
+April 19, 2012
+
+*/
+
+h1{
+	color:white;
+	font-style: italic;
+}
+
+h2{ 
+	text-align: center;
+	font-style: italic;
+	outline: red solid;
+	color: white;
+	padding: 20px;
+	margin: 20px;
+}
+
+li{
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+}
+
+body{
+	background-Color: green;
+}
+
+legend{
+	color: red;	
+	font-weight: bold;
+}
+
+input{
+	color: red;
+}
+
+a{
+	font-weight: bold;	
+}
+
+nav{
+	color: red;
+	text-indent: 50px;
+}
+
+p{ 
+	color: gray;
+}
+
+label.error{
+	display: block; margin: 10px 0; color: red;
+}
+
+#aierrorslink{
+	display: none;
+}

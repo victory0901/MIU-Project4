@@ -1,0 +1,132 @@
+<!doctype html>  
+<html lang="en">
+
+<!--
+
+MIU Project 3
+James Floyd II 
+April 19, 2012
+BRONZE App
+-->
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Christmas List App</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="styles.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="modernizr.custom.min.js"></script>
+
+</head>
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed">
+				<h1>Christmas Shopping List</h1>
+			</div> <!-- Header ends -->
+			
+			<div>
+			<a href="additem.html" data-ajax="false" >
+				<img  src="images/Call_To_Action.png" /> 
+			</a>
+			</div> <!-- Call to Action ends -->
+			
+			<p>This app allows you to create a shopping list for Christmas gifts!</p> 
+			
+			<div data-role="content">
+				
+				<div data-role="collapsible-set">
+					
+					<div data-role="collapsible" data-collapsed="false">
+						<h3>Browse Gifts</h3>
+						<ul data-role="listview">
+							<li><img  src="images/electronics.png" />Electronics</li>
+							<li><img  src="images/clothing.png" />Clothing</li>
+							<li><img  src="images/giftcard.jpg" />Gift Cards</li>
+							<li><img  src="images/appliances.png" />Appliances</li>
+						</ul>
+					</div>
+					<div data-role="collapsible" data-collapsed="true">
+						<h3>Browse by First Name</h3>
+						<ul data-role="listview">
+							<li>A-F</li>
+							<li>G-M</li>
+							<li>N-S</li>
+							<li>T-Z</li>
+							<li>All Names</li>
+						</ul>
+					</div>
+					<div data-role="collapsible" data-collapsed="true">
+						<h3>Browse by Last Name</h3>
+						<ul data-role="listview">
+							<li>A-F</li>
+							<li>G-M</li>
+							<li>N-S</li>
+							<li>T-Z</li>
+							<li>All Names</li>
+						</ul>
+					</div>
+					<div data-role="collapsible" data-collapsed="true">
+						<h3>Browse Family</h3>
+						<ul data-role="listview">
+							<li>Parents</li>
+							<li>Children</li>
+							<li>Aunts/Uncles</li>
+							<li>Siblings</li>
+							<li>Cousins</li>
+						</ul>
+					</div>
+					<div data-role="collapsible" data-collapsed="true">
+						<h3>Browse Non-Family</h3>
+						<ul data-role="listview">
+							<li>Friends</li>
+							<li>Co-Workers</li>
+							<li>Other</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div data-role="fieldcontain">
+				<div>		
+				<ol data-role="listview" data-dividertheme="e">
+					<li data-role="list-divider">Recently Added Gifts <p class="ui-li-aside">Up to Date</p></li>
+					<li>iPad - Added on 4/3</li>
+					<li>Amazon Gift Card - Added on 3/22</li>
+					<li>Drive: Blu-Ray - Added on 3/17</li>
+					<li>32GB Flash Drive - Added on 3/16</li>
+					<li>XBOX 360 - Added on 2/25</li>
+				</ol>	
+				</div>
+			</div>
+			</div>
+			
+			<!-- Content Ends -->
+			<div data-role="footer" data-position="fixed">		
+				<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-role="button" data-icon="home" data-ajax="false">Home</a></li>
+					<li><a href="../gold/index.html" data-role="button" data-icon="star" data-ajax="false" >Gold App</a></li>
+					<li><a href="http://victory0901.github.com/MIU-Project2" data-role="button" data-icon="info">GH-Pages</a></li>
+				</ul>
+				</div><!-- Navbar ends -->
+			</div><!-- Footer ends -->
+		</div>
+		
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
