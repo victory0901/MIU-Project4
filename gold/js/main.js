@@ -1,7 +1,53 @@
-
-//MIU Project 3
+//MIU Project 4
 //James Floyd II 
-//April 19, 2012
+//April 26, 2012
+
+
+var parseAddGiftForm = function(data){
+	// uses form data here;
+	console.log(data);
+};
+
+$(document).ready(function(){
+
+	var aiform = $('#additemform'),
+		aierrorslink = $('#aierrorslink')
+	;
+
+	aiform.validate({
+		invalidHandler: function(form, validator){
+			aierrorslink.click();
+			var html = '';
+			for(var key in validator.submitted){
+				var label = $('label[for^="'+ key +'"]').not('[generated]');
+				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
+				var fieldName = legend.length ? legend.text() : label.text();
+				html += '<li>'+ fieldName +'</li>';
+			};
+			$("#additemerrors ul").html(html);
+		},
+		submitHandler: function(){
+			var data = aiform.serializeArray();
+			parseAddGiftForm(data);
+		}
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 //Wait for DOM to be ready
 window.addEventListener("DOMContentLoaded", function(){
@@ -292,3 +338,5 @@ window.addEventListener("DOMContentLoaded", function(){
 	var save = $("submit");
 	save.addEventListener("click", validate);
 });
+
+*/
