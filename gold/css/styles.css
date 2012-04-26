@@ -7,7 +7,7 @@ April 19, 2012
 */
 
 h1{
-	color:white;
+	color: #2f5e2f;
 	font-style: italic;
 }
 
@@ -25,8 +25,19 @@ li{
 	color: white;
 }
 
-body{
-	background-Color: green;
+
+body {
+    background: url(images/grey.jpeg);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
 }
 
 legend{
@@ -48,7 +59,7 @@ nav{
 }
 
 p{ 
-	color: gray;
+	color: #753B3B;
 }
 
 label.error{
