@@ -58,12 +58,8 @@ April 26, 2012
 			<h1><img  src="images/logo.png" /> Add Gift</h1>
 		</div>
 		
-		<div>
-			<nav>
-				<a href="#" data-ajax="false" id="clear">Clear Stored Data</a>
-				<a href="#" data-ajax="false" id="displayLink">Display Data</a>
-				<a href="additem.html" data-role="button" data-mini="true" id="addNew" style="display:none;">Add New Item</a>
-			</nav>
+		<div data-role="fieldcontain">
+					<input type="submit" value="Add Gift" data-theme="b" />
 		</div>
 		
 		<div data-role="content">
@@ -116,8 +112,12 @@ April 26, 2012
 					<input type="reset" value="Clear" data-theme="e" />
 				</div>
 				
-				<div data-role="fieldcontain">
-					<input type="submit" value="Add Gift" data-theme="b" />
+				<div>
+					<nav>
+						<a href="#" data-ajax="false" id="clear">Clear Stored Data</a>
+						<a href="#" data-ajax="false" id="displayLink">Display Data</a>
+					<a href="additem.html" data-role="button" data-mini="true" id="addNew" style="display:none;">Add New Item</a>
+					</nav>
 				</div>
 				
 				<a href="#additemerrors" id="aierrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
