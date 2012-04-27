@@ -33,14 +33,10 @@ $(document).ready(function(){
 	});
 });
 
-
-
-
-
-
-
-
-
+submitHandler: function() {
+	var data = $(".additemform").serializeArray();
+	localStorage.setItem("formdata", data);
+}
 
 
 
@@ -48,6 +44,13 @@ $(document).ready(function(){
 
 
 /*
+
+
+
+
+
+
+
 
 //Wait for DOM to be ready
 window.addEventListener("DOMContentLoaded", function(){
