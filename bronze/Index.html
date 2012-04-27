@@ -26,6 +26,21 @@ BRONZE App
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<link rel="stylesheet" href="css/styles.css"/>
+	<style type="text/css">
+		body {
+    		background: url(images/green.bmp);
+   		 	background-repeat:repeat-y;
+    		background-position:center center;
+    		background-attachment:scroll;
+    		background-size:100% 100%;
+			}
+		.ui-page {
+    		background: transparent;
+			}
+		.ui-content{
+    		background: transparent;
+			}
+	</style>
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -34,7 +49,7 @@ BRONZE App
 	<body>
 		<div data-role="page" id="home">
 			<div data-role="header" data-position="fixed">
-				<h1>Christmas List</h1>
+				<h1><img  src="images/logo.png" /> Christmas List</h1>
 			</div> <!-- Header ends -->
 			
 			<div>
